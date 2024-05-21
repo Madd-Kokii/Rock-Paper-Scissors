@@ -36,11 +36,11 @@ function updateScoresCheckAttemptsAndRestart() {
     if (attempts >= maxAttempts) {
 
             if (Your_Points > Computer_Points) {
-                Result.innerHTML = "Game Over! You won with the highest points!" + "<br>" + " Game is restarting now wait 7secs";
+                Result.innerHTML = "Game Over! You won with the highest points!" + "<br>" + " Game is restarting now wait a few secs.";
             } else if (Computer_Points > Your_Points) {
-                Result.innerHTML = "Game Over! Computer won with the highest points!" + "<br>" +  " Game is restarting now wait 7secs";
+                Result.innerHTML = "Game Over! Computer won with the highest points!" + "<br>" +  " Game is restarting now wait a few secs.";
             } else {
-                Result.innerHTML = "Game Over! It's a Draw! Better Luck Next Time!!" + "<br>" + " Game is restarting now wait a few secs";
+                Result.innerHTML = "Game Over! It's a Draw! Better Luck Next Time!!" + "<br>" + " Game is restarting now wait a few secs.";
             }
         setTimeout(resetGame, 9000);
     }
